@@ -15,7 +15,8 @@
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
-    "format": "prettier --write '**/*.{ts,tsx,js,jsx,json,css,scss}'"
+    "format": "prettier --write '**/*.{ts,tsx,js,jsx,json,css,scss}'",
+    "optimize-svg": "svgo -f './assets/efishery'"
   },
   "module": "dist/icons-react.esm.js",
   "repository": "https://github.com/eFishery/OneFish-icons-react",
@@ -46,6 +47,7 @@
     "husky": "^6.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "svgo": "^2.3.0",
     "tsdx": "^0.14.1",
     "tslib": "^2.2.0",
     "typescript": "^4.2.4"
