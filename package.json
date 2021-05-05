@@ -1,0 +1,72 @@
+{
+  "name": "react-package-boilerplate",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": "yuhanas.yulianto@gmail.com",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "format": "prettier --write '**/*.{ts,tsx,js,jsx,json,css,scss}'"
+  },
+  "module": "dist/react-package-boilerplate.esm.js",
+  "repository": "https://github.com/yuhanasy/react-package-boilerplate",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "npm",
+    "package",
+    "boilerplate",
+    "tsdx",
+    "react",
+    "commitlint",
+    "react-testing-library"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.1",
+    "@commitlint/config-conventional": "^12.1.1",
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^11.2.6",
+    "@types/react": "^17.0.5",
+    "@types/react-dom": "^17.0.3",
+    "husky": "^6.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.2.0",
+    "typescript": "^4.2.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "prettier": {
+    "printWidth": 120,
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "bracketSpacing": true,
+    "jsxBracketSameLine": false,
+    "arrowParens": "avoid",
+    "endOfLine": "auto"
+  }
+}
