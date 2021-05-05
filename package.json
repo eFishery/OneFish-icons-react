@@ -1,8 +1,8 @@
 {
-  "name": "react-package-boilerplate",
+  "name": "@onefish/icons-react",
   "version": "0.1.0",
   "license": "MIT",
-  "author": "yuhanas.yulianto@gmail.com",
+  "author": "eFishery's engineer <engineer@efishery.com>",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
@@ -17,19 +17,18 @@
     "prepare": "tsdx build",
     "format": "prettier --write '**/*.{ts,tsx,js,jsx,json,css,scss}'"
   },
-  "module": "dist/react-package-boilerplate.esm.js",
-  "repository": "https://github.com/yuhanasy/react-package-boilerplate",
+  "module": "dist/icons-react.esm.js",
+  "repository": "https://github.com/eFishery/OneFish-icons-react",
   "publishConfig": {
     "access": "public"
   },
   "keywords": [
-    "npm",
-    "package",
-    "boilerplate",
-    "tsdx",
-    "react",
-    "commitlint",
-    "react-testing-library"
+    "efishery",
+    "onefish",
+    "design system",
+    "icons",
+    "svg",
+    "react"
   ],
   "engines": {
     "node": ">=10"
