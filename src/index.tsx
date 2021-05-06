@@ -1,6 +1,5 @@
-import * as React from 'react';
+/* GENERATED FILE */
+export { Icon, IconProps, IconContext } from "lib";
 
-// Delete me
-export const Thing = () => {
-  return <div>the snozzberries taste like snozzberries</div>;
-};
+export * from 'icons/efishery';
+export * from 'icons/phosphor';
