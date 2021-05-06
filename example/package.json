@@ -1,14 +1,16 @@
 {
   "name": "example",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "analyze": "source-map-explorer 'dist/*.js'",
     "start": "parcel index.html",
     "build": "parcel build index.html"
   },
   "dependencies": {
-    "react-app-polyfill": "^1.0.0"
+    "react-app-polyfill": "^1.0.6",
+    "source-map-explorer": "^2.4.2"
   },
   "alias": {
     "react": "../node_modules/react",
