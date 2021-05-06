@@ -1,5 +1,5 @@
 /* GENERATED FILE */
-export { Icon, IconProps, IconContext } from "lib";
+export { Icon, IconProps, IconContext } from "../../lib";
 
 export { default as Autofeeder } from "./Autofeeder";
 export { default as BosJuraganTambak } from "./BosJuraganTambak";

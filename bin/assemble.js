@@ -153,7 +153,7 @@ export default ${name};
 function generateExports(COMPONENTS_PATH) {
   let indexString = `\
 /* GENERATED FILE */
-export { Icon, IconProps, IconContext } from "lib";
+export { Icon, IconProps, IconContext } from "../../lib";
 
 `;
   for (let key in icons) {
@@ -184,7 +184,7 @@ function generateIndex() {
 
   let indexString = `\
 /* GENERATED FILE */
-export { Icon, IconProps, IconContext } from "lib";
+export { Icon, IconProps, IconContext } from "./lib";
 
 `;
 
@@ -193,7 +193,7 @@ export { Icon, IconProps, IconContext } from "lib";
     if (!path.join(ICONS_PATH, folder, INDEX_NAME)) return;
 
     indexString += `\
-export * from 'icons/${folder}';
+export * from './icons/${folder}';
 `;
   });
 

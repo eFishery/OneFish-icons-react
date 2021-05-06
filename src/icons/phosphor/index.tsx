@@ -1,5 +1,5 @@
 /* GENERATED FILE */
-export { Icon, IconProps, IconContext } from "lib";
+export { Icon, IconProps, IconContext } from "../../lib";
 
 export { default as Activity } from "./Activity";
 export { default as Airplane } from "./Airplane";
