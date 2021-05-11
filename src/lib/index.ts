@@ -1,6 +1,6 @@
 import { createContext, ComponentPropsWithoutRef } from 'react';
 
-export type IconWeight = 'thin' | 'light' | 'regular' | 'bold' | 'fill' | 'duotone';
+export type IconWeight = 'regular' | 'fill';
 
 export type PaintFunction = (color: string) => React.ReactNode | null;
 
@@ -31,7 +31,7 @@ export const renderPathForWeight = (
   const path = pathsByWeight.get(weight);
   if (!!path) return path(color);
 
-  console.error('Unsupported icon weight. Choose from "thin", "light", "regular", "bold", "fill", or "duotone".');
+  console.error('Unsupported icon weight. Choose "regular" or "fill".');
 
   return null;
 };
