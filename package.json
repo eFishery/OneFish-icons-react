@@ -18,7 +18,8 @@
     "format": "prettier --write '**/*.{ts,tsx,js,jsx,json,css,scss}'",
     "optimize-svg": "svgo -f './assets/efishery'",
     "collate": "node bin/collate.js",
-    "assemble": "node bin/assemble.js"
+    "assemble": "node bin/assemble.js",
+    "pre-commit": "yarn lint --fix && yarn test --onlyChanged"
   },
   "module": "dist/icons-react.esm.js",
   "repository": "https://github.com/eFishery/OneFish-icons-react",
@@ -54,12 +55,6 @@
     "tsdx": "^0.14.1",
     "tslib": "^2.2.0",
     "typescript": "^4.2.4"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "tsdx lint",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
   },
   "prettier": {
     "printWidth": 120,
