@@ -6,11 +6,10 @@
     "start": "parcel index.html",
     "build": "parcel build index.html",
     "analyze": "yarn build --reporter @parcel/reporter-bundle-buddy",
-    "prebuild": "rm -rf dist"
+    "prebuild": "rimraf dist"
   },
   "dependencies": {
-    "react-app-polyfill": "^1.0.6",
-    "source-map-explorer": "^2.4.2"
+    "react-app-polyfill": "^1.0.6"
   },
   "alias": {
     "react": "../node_modules/react",
@@ -22,6 +21,7 @@
     "@types/react": "^16.9.11",
     "@types/react-dom": "^16.8.4",
     "parcel": "^2.7.0",
+    "rimraf": "^3.0.2",
     "typescript": "^3.4.5"
   }
 }
