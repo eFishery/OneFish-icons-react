@@ -1,12 +1,12 @@
 {
   "name": "example",
   "version": "1.1.0",
-  "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "analyze": "source-map-explorer 'dist/*.js'",
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "analyze": "yarn build --reporter @parcel/reporter-bundle-buddy",
+    "prebuild": "rm -rf dist"
   },
   "dependencies": {
     "react-app-polyfill": "^1.0.6",
@@ -18,9 +18,10 @@
     "scheduler/tracing": "../node_modules/scheduler/tracing-profiling"
   },
   "devDependencies": {
+    "@parcel/reporter-bundle-buddy": "^2.7.0",
     "@types/react": "^16.9.11",
     "@types/react-dom": "^16.8.4",
-    "parcel": "^1.12.3",
+    "parcel": "^2.7.0",
     "typescript": "^3.4.5"
   }
 }
